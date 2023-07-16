@@ -13,7 +13,7 @@ export default function Hero(props) {
 
     function showMostPicked() {
         window.scrollTo({
-            top: props.refMostPicked.current.ofsetTop - 30,
+            top: props.refMostPicked.current.offsetTop - 30,
             behavior: "smooth"
         });
     }
@@ -42,7 +42,7 @@ export default function Hero(props) {
                             width="36"
                             height="36"
                             src={IconTraveler} 
-                            alt={'${props.data.travelers} Travelers'} />
+                            alt={`${props.data.travelers} Travelers`} />
                         <h6 className="mt-3">
                             {formatNumber(props.data.travelers)} <span className="text-gray font-weight-light">
                                 travelers
@@ -54,7 +54,7 @@ export default function Hero(props) {
                             width="36"
                             height="36"
                             src={IconTreasure} 
-                            alt={'${props.data.treasures} Treasures'} />
+                            alt={`${props.data.treasures} Treasures`} />
                         <h6 className="mt-3">
                             {formatNumber(props.data.treasures)} <span className="text-gray font-weight-light">
                                 treasures
@@ -66,7 +66,7 @@ export default function Hero(props) {
                             width="36"
                             height="36"
                             src={IconCities} 
-                            alt={'${props.data.cities} Cities'} />
+                            alt={`${props.data.cities} Cities`} />
                         <h6 className="mt-3">
                             {formatNumber(props.data.cities)} <span className="text-gray font-weight-light">
                                 cities
